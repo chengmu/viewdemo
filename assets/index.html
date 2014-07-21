@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Android Test Page</h1>
+    <h2></h2>
+
+    <script>
+        var h2 = document.getElementsByTagName('h2')[0];
+        h2.innerText = navigator.userAgent;
+
+        function testConsole(){
+            console.log('test');
+        }
+    </script>
+    <input type="button" value="sayhi" onclick="me.showToast('chengmu');"/>
+    <input type="button" value="test console" onclick="testConsole();"/>
+
+
+    <script>
+        function testAndroidCallJs(name) {
+            console.log('hey, ' + name + ' this is js run by android!');
+        }
+    </script>
+</body>
+</html>
